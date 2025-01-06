@@ -1,6 +1,10 @@
-function mi_funcion(txt)
+function mi_funcion(numero) 
 {
-    console.log(txt)
+    if (numero === 10) console.log("ES EL 10"); 
+    else 
+    {
+        console.log(numero) 
+        return mi_funcion(numero + 1); 
+    }
 }
-
-mi_funcion("Hola mundo")
+mi_funcion(1)
